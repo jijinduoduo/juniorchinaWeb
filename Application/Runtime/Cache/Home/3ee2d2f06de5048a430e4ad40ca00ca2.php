@@ -1,0 +1,130 @@
+<?php if (!defined('THINK_PATH')) exit();?>      <?php
+$sum = count($comment_data); ?>
+<script type="text/javascript">
+	
+	 $("#sum_all").val("<?php echo $sum; ?>");
+</script>
+ <div id="company">
+			  	   
+	<?php
+ $sum = count($comment_data); for($i=0;$i<$sum;$i++) { $news_id=$comment_data[$i]['id']; ?> 
+	<div class="news_list" news_id="<?php echo $news_id;?>">
+		
+		
+	<?php  echo $comment_data[$i]['title'].'<span class="new_data">'.$comment_data[$i]['news_time']."</span><br />"; ?>
+	</div>
+	
+	<?php
+ } $sum_all = count($comment_data_sum); echo '<br />'; $pagenumber=ceil($sum_all/10); ?>	
+	
+ </div>
+
+<script type="text/javascript">
+	 $("#pagenumber").val("<?php echo $pagenumber; ?>");
+	 $("#sum_all").val("<?php echo $sum_all; ?>");
+	
+</script>
+                         <!--日期筛选后所有记录-->
+                     <input id="sum_all" value="" type="hidden"  />
+                           <!--这是一共多少页数-->
+                     <input id="pagenumber" value="" type="hidden"  />
+                            	  <!--当前页为：-->
+                     <input  value="1" id="page" type="hidden"/> 
+ 
+<div style="width:800px;margin:0 auto;">
+<div id="sskkpager"></div>
+</div>
+<script type="text/javascript">
+function getParameter2(name) { 
+	var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); 
+	var r = window.location.search.substr(1).match(reg); 
+	if (r!=null) return unescape(r[2]); return null;
+}
+
+//init
+
+$(function(){
+	var totalPage = $("#pagenumber").val();	//总页码
+	var totalRecords = $("#sum_all").val();//总数据条数
+	var pageNo = getParameter2($("#page").val()); //当前页码
+	if(!pageNo){
+		pageNo = 1;
+	}
+	//生成分页
+	//有些参数是可选的，比如lang，若不传有默认值
+	sskkpager.generPageHtml({
+        //当前页码
+		pno : pageNo,
+		//总页码
+		total : totalPage,
+		//总数据条数
+		totalRecords : totalRecords,
+		mode : 'click',//默认值是link，可选link或者click
+		click : function(n){
+			// do something
+			//手动选中按钮			 
+                $("#page").val(n);  //给页码 赋值  
+               new_report_t();//ajax调用
+               
+			    this.selectPages(n);
+			return false;
+		}
+		
+		,lang				: {
+			firstPageTexts			: '首页',
+			firstPageTipTexts		: '首页',
+			lastPageTexts			: '尾页',
+			lastPageTipTexts			: '尾页',
+			prePageTexts				: '上一页',
+			prePageTipTexts			: '上一页',
+			nextPageTexts			: '下一页',
+			nextPageTipTexts			: '下一页',
+			totalPageBeforeTexts		: '共',
+			totalPageAfterTexts		: '页',
+			currPageBeforeTexts		: '第',
+			currPageAfterTexts		: '页',
+			totalInfoSplitStrs		: '/',
+			totalRecordsBeforeTexts	: '共',
+			totalRecordsAfterTexts	: '条数据',
+			gopageBeforeTexts		: '',
+			gopageButtonOkTexts		: '确定',
+			gopageAfterTexts			: '页',
+			buttonTipBeforeTexts		: '第',
+			buttonTipAfterTexts		: '页'
+           
+
+		}
+	});
+});
+
+
+</script>
+
+
+<script type="text/javascript">
+$(function(){
+	$('.news_list').click(function(){	
+	var news_id = $(this).attr('news_id');
+	
+         $.ajax({
+             type: "GET",
+             url: "<?php echo U("news_content");?>",                     
+             data: {"news_id_q":news_id},          
+             dataType: "json",	
+             success: function(data){
+             			
+                         $('#new_report').empty();   //清空process里面的所有内容
+                         var html =''; 
+                             $.each(data, function(commentIndex, comment){
+                               html += '' + data['content']                                         
+                                         + '';
+                                  }); 
+                         $('#new_report').html(html);
+                      }
+             
+             });
+
+         });
+
+});
+</script>

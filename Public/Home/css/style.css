@@ -1,0 +1,738 @@
+*
+{ 
+	
+	margin:0;
+	padding:0;
+	outline:none;
+	font-family: "微软雅黑";
+  
+}
+@font-face {
+    font-family:'huawen';  /*给自定义字体命名*/
+    src: url('../font/huawen.ttf');
+   
+}
+@font-face {               /*给自定义字体命名ie*/
+    font-family:'huawen';
+    src: url('../font/huawen.eot');
+}
+body
+{
+    margin: 0 auto;     background: #FDFBF7;
+    width: 1024px; 
+}
+ /*首页*/
+.zj_header
+{
+	width:1024px;
+	height:100px;
+	float: left;
+	background: url(../images/zj_header_bg.png) no-repeat;
+}
+.url ul li
+{
+	float:right;
+	list-style:none;	
+    margin-top:30px;
+	
+}
+
+.url ul li a
+{
+
+	font-size:16px;
+	text-decoration:none;
+	width: 104px;
+	display: block;
+	text-align: center;
+	line-height: 220%;
+	text-indent: -1em; 
+    font-family:"huawen";
+	font-style:normal; 
+	font-weight:normal;
+}
+
+.hover
+{
+	background-image: url(../images/zj_hover.png) ;
+	color: #FFFFFF;
+	font-family: 'huawen';
+}
+
+/*首页logo尊嘉资产*/
+.zj_logo
+{
+	float: left;
+	margin-left: 30px;
+	margin-top:20px;
+	border: none;
+}
+.zj_logo a img
+{
+	float: left;
+	margin-left: 30px;
+	margin-top:20px;
+	border: none;
+}
+.zj_body
+{
+	width: 100%;
+	height: 658px;
+	float: left;
+}
+.zj_footer
+{
+	width: 100%;
+	height: 52px;
+	background-image: url(../images/zj_footer.png);
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 12px;
+	font-family:"Serif",Georgia,Serif;
+	line-height: 52px;
+	float: left;
+}
+ /*
+基金产品
+*/
+.zj_fundbody
+{
+	width: 100%;
+	height: 1326px;
+	float: left;
+	background: url(../images/zj_fund.png) center;
+}
+ /*
+基金产品logo
+*/
+.zj_fundlogo
+{
+	width: 117px;
+	height: 107px;
+	float: left;
+	margin-left: 216px;
+	margin-top: 16px;
+	
+}
+/*新闻logo*/
+.zj_news_logo
+{
+	width: 117px;
+	height: 43px;
+	float: left;
+	margin-left: 216px;
+	margin-top: 16px;
+	
+}
+
+/*
+ * 基金业绩走势图
+ * style="width:700px;height:300px;margin:0 auto"
+ */
+#container
+{
+	width:600px;
+	height:300px;
+	margin:0 auto";
+	
+	
+}
+
+
+/*
+ * 关于基金产品的背景
+ */
+
+.zj_aboutbody
+{
+	width: 100%;
+	height: 1848px;
+	float: left;
+	background: url(../images/about_bj.png) center;
+	
+}
+
+.zj_about_logo
+{
+	width: 161px;
+	height: 98px;
+	margin-top: 50px;
+	margin-left: 396px;
+}
+.zj_about{
+	width: 806px;
+	height: 1600px;
+	margin-top: 60px;
+	margin-left: 96px;
+		
+
+	
+	
+}
+/*关于尊嘉的标题*/
+.about_title a
+{
+	color:#000000;
+	font-weight: bolder;
+	font-size:15px;
+	text-decoration:none;
+	width: 144px;
+	height: 35px;
+	display: block;
+	text-align: center;
+	line-height: 220%;
+	text-indent: -4em; 
+	margin: 20px auto;
+	background-image: url(../images/about_hover.png) ; 
+	color: #fff;
+}
+/*公司简介*/
+.about1
+{
+	
+	height: 152px;
+	margin-bottom: 100px;
+
+}
+/*投资理念*/
+.about2
+{
+	
+	height: 316px;
+	margin-bottom: 50px;
+	
+}
+/*公司荣誉*/
+.about3
+{
+	
+	height: 350px;
+	margin-bottom: 50px;
+	
+}
+/*合作伙伴*/
+.about4
+{
+	
+	height: 650px;
+	margin-top:-50px;
+	
+}
+/*确认预约*/
+.sure_process
+{
+	width: 161px;
+	height: 52px;
+	text-align: center;	
+	margin-left: 150px;
+	margin-top: 50px;
+	
+}
+ /*
+基金三大产品
+*/
+.zj_fundsbody
+{
+	width: 100%;
+	height: 666px;
+	float: left;
+	background: url(../images/funds_bj.png) center;
+}
+/*基金产品分类*/
+.funds_classify
+{
+	width: 100%;
+	height: 218px;
+	margin-top: 376px;
+}
+.funds_con th
+{
+	height: 16px;
+	font-size: 10px;
+	line-height: 16px;
+	
+}	
+	/*产品净值*/
+.table_con_t th
+{
+	border: 1px solid #000000;
+	text-align: center;	
+	width: 212px;
+	height: 50px;
+}
+.table_con td
+{
+	border: 1px solid #000000;
+	border-top: none;
+	text-align: center;	
+	width: 212px;
+	
+}
+/*产品净值日期*/
+.fund_date_all
+{
+	font-weight: bold;
+	font-size: 12px;
+	margin-bottom: 16px;
+	text-align: center;
+}
+.fund_date_all input[type="text"]
+{
+	
+	width: 100px;
+	height: 22px;
+    border-radius: 6px;
+	
+}
+#page1,
+#page2,
+#page3,
+#page4,
+#page5
+{
+	width: 23px;
+	
+}
+/*分页时间确认*/
+.date_sure
+{
+	border-radius:6px;
+	font-size: 12px;
+	height: 24px;
+	border: 1px solid #ccc;
+	cursor:pointer ;/*变成小手*/
+	padding: 2px;
+}
+/*产品净值分页*/	
+.paging 
+{
+	font-weight: bold;
+	font-size: 12px;
+	margin-top: 30px;
+	text-align: center;
+}
+.paging input[type="button"]
+{
+	background: #959595;
+	color: #FFFFFF;
+	padding: 2px;
+	font-weight: bold;
+	border-radius: 6px;
+}
+.paging input[type="text"]
+{
+    width: 35px;
+	padding: 2px;
+	font-weight: bold;
+	border-radius: 6px;
+}
+	/*产品分类*/
+.funds_con_1 th,.funds_con_1 td
+{
+	border: 1px solid rgb(190,190,190);
+	text-align: center;	
+	font-size: 12px;
+	
+}
+.funds_con_1 th
+{
+	background:rgb(170,170,170);
+	font-size: 12px;
+	height: 22px;
+}
+.funds_con_1 td
+{
+	background:rgb(218,218,218);
+	font-size: 12px;
+	text-align: center;
+	height: 22px;
+}
+.funds_con_1
+{
+	display: block;
+	float: left;
+	width: 250px;
+    height: auto;
+	margin-left: 66px;
+}
+/*三大系列产品表格里字大小*/
+
+.funds_con_1 tr td a,
+.funds_con_1 tr td 
+{
+	font-size: 12px;
+}
+/*产品名称*/
+.fund_name
+{
+	width: 100px;
+}
+/*净值*/
+.fund_zhi
+{
+	width: 36px;
+}
+/*年化收益*/
+.fund_sou
+{
+	width: 55px;
+}
+/*夏普比率*/
+.fund_lv
+{
+	width: 55px;
+}
+
+
+
+/*
+ * 认购流程的第二面 
+ * */
+
+/*重要提示同意按钮*/
+.agree
+{
+	width:300px;	
+	height: 43px;	
+	margin-top: 120px;
+	margin-left: 236px;
+
+}
+.agree1
+{
+	width: 93px;
+	height: 43px;
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	line-height: 43px;
+	background:url(../images/agree.png) no-repeat;
+	float: left;
+	
+}
+.agree2
+{	
+	margin-left:55px;	
+	width: 93px;
+	height: 43px;
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	line-height: 43px;
+	background:url(../images/agree.png) no-repeat;
+	float: left;
+}
+
+.buy_info
+{
+	width: 728px;
+	height: 888px;
+	margin-left: -50px;	
+	margin-top: 50px;
+	background: url(../images/buy.png) no-repeat;
+}
+.buy
+{
+	width: 100%;
+	height: 1280px;
+	float: left;
+	margin-bottom: -50px;
+	background: url(../images/zj_fund.png) no-repeat;
+}
+.attention
+{
+	padding-top:50px;
+	margin-left:320px;
+	font-weight:bold;
+	font-size:20px;
+}
+.attention_c
+{
+	width:620px;
+	margin-left: 78px;
+	padding-top:20px;
+}
+/*
+ * 认购流程的第三面 
+ * */
+
+.bitian
+{
+	color: #FF0000;
+}
+.style
+{
+	width:70px;	
+	clear:left;
+	height: 30px;
+    line-height: 30px;
+    display: block;
+}
+.sure_yuyue
+{
+	margin-left:200px;
+	font-size:20px;
+	margin-bottom: 10px;
+	font-weight:bold;
+}
+.client
+{
+	margin-left:-20px;
+}
+.ra
+{
+	margin-left:150px;
+}
+.prduce
+{
+	margin-bottom:10px;
+	height:30px;
+	width: 400px;
+}
+
+/*提交按钮*/
+.submit_all
+{
+	width:300px;	
+	margin-top: 100px;
+	height: 43px;	
+	margin-left: 130px;
+	margin-top: 40px;
+}
+.submit,.submit2
+{
+	width: 93px;
+	height: 43px;
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	line-height: 43px;
+	background:url(../images/agree.png) no-repeat;
+	float: left;
+	border: none;
+}
+.submit2
+{
+	margin-left: 45px;
+}
+.textarea_order
+{
+	height: 100px;
+	width: 400px;
+}
+/*
+ * 文章列表 日期显示 
+ * */
+.new_title
+{
+	text-align:center;
+	padding-bottom:20px;
+}
+
+/*尊嘉公告*/
+.tab_conbox
+{
+	width: 700px;
+	height: 1300px;
+	display: block;
+	float: right;
+	padding-right: 60px;
+	margin-top: 60px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+/*尊嘉公告新闻的列表*/
+.news_list
+{
+	cursor:pointer /*变成小手*/
+}
+.new_data
+{
+	display: block;
+	font-size: 12px;
+	color: #9F9D9C;
+}
+/*认购预约按钮,下一页同意，不同意阿按钮*/
+#attention_t,.agree1,.agree2,.submit,.submit2
+{
+	cursor:pointer /*变成小手 */
+}
+/*/*认购预约按钮*/
+#attention_t
+{
+	float: left;
+	margin-left: 270px;
+	margin-top: 30px;
+}
+/*常见问题*/
+.question_data
+{
+	width: 680px;
+	display: block;
+	margin-left: 32px;
+}
+/*所有侧边栏字体 */
+.Left_font_size
+{
+	font-size: 16px;
+	
+}
+/*联系方式公司名称 */
+.tel_440
+{
+	width: 450px;
+    float: left;
+}
+.tel_40
+{
+	width: 50px;
+	float: left;
+}
+.tel_392
+{
+	width: 392px;
+	float: left;
+}
+/*公司信息图片 */
+.company_img_2
+{
+	margin-top: 26px;
+}
+.company_img_3
+{
+	margin-top: 46px;
+}
+.company_name
+{
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 4px;
+}
+.company_name_en
+{
+	font-size: 14px;
+	color: #626262;
+	margin-top: 4px;
+}
+.company_address
+{
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 4px;
+}
+.company_address_en
+{
+	font-size: 14px;
+	color: #626262;
+	margin-top: 4px;
+}
+.company_1
+{
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 4px;	
+}
+/*地图 */
+.map
+{
+	width:668px;
+	height:530px;	
+	float: left;
+	margin-top: 40px;
+	float: right;
+}
+/*在线留言*/
+/*留言总div*/
+.main1
+{
+	width: 620px;
+	float: left;
+	margin-left: 20px;
+}
+.main2
+{
+	width: 572px;
+	float: right;
+}
+.img_mess
+{
+	width: 40px;
+	float: left;
+	
+}
+/*留言提示*/
+.main2_txt1{
+	font-size: 14px;
+	font-weight: bold;
+	width: 572px;
+	float: left;
+}
+/*可输入文本提示*/
+#textarea_txt
+{
+	font-size: 14px;
+	width: 572px;
+	float: left;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.word_most
+{
+	color: #A7A7A7;
+	margin-right: 50px;
+}
+/*留言内容框*/
+#textarea2
+{
+	height: 330px;
+	width: 570px;
+}
+/*留言个人详细信息*/
+.mess_info
+{
+	margin: 0 auto;
+	font-size: 14px;
+}
+.mess_k2
+{
+	width: 300px;
+}
+/*提交*/
+.me_submit
+{
+	width: 93px;
+	height: 43px;
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	line-height: 43px;
+	background:url(../images/agree.png) no-repeat;
+	float: left;
+	border: none;
+	margin-top: 30px;
+	margin-left: 30px;
+	cursor:pointer /*变成小手 */
+}
+.question
+{
+	width: 790px;
+	overflow:auto;  
+	height: 1000px;
+}
+/*新闻内容*/
+.question2
+{
+	width: 700px;
+	overflow:auto;  
+	height: 900px;
+}
+/*新闻内容显示框*/
+#company,#new_report,#view
+{
+	margin-left: 10px;
+	width: 690px;
+}

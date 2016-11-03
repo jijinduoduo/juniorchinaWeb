@@ -1,0 +1,63 @@
+<extend name="Base/common"/>
+<block name="header">
+	<header class="zj_header" >
+		<include file="Public/header"/>
+    </header>
+</block>
+<div>
+<block name="body">
+	
+	  <div class="zj_aboutbody">
+
+	  	<div class="zj_about_logo">
+	  		<img src="__IMG__/about.png" />
+	  		
+	  	</div>
+	  	<div class="zj_about">
+	  	<div class="about1">
+	  		<h3 class="about_title"><a>公司简介</a></h3>
+	  		<p>
+	  			<foreach name="data" item="vo"><p><span id="info_id"> <{$vo.content}></span>
+			 
+			 </foreach>
+	  		</p>
+	  	</div>
+ 	
+	  	<div class="about2">
+	  		<h3 class="about_title"><a>投资理念</a></h3>
+	  		<p>
+	  			<foreach name="idea" item="vo"><p><span id="info_id"> <{$vo.content}></span>
+			 
+			 </foreach>
+	  		</p>
+	  	</div>
+ 		  	<div class="about3">
+	  		<h3 class="about_title"><a>公司荣誉</a></h3>
+	  		<p>
+	  			<foreach name="score" item="vo"><p><span id="info_id"> <{$vo.content}></span>
+			 </p>
+			 </foreach>
+	  		</p>
+	  	</div>
+ 		  	<div class="about4">
+	  		<h3 class="about_title"><a>合作伙伴</a></h3>
+	  		<p>
+	  			<foreach name="partner" item="vo"><span id="info_id"> <{$vo.content}></span>
+			 
+			 </foreach>
+	  		</p>
+	  	</div>
+    	</div>
+
+	</div>
+
+		
+   
+</block>
+</div>
+<block name="footer">
+	<header class="zj_footer" >
+		
+		<include file="Public/footer"/>
+    </footer>
+</block>

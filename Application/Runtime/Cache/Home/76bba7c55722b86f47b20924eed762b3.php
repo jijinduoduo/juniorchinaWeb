@@ -1,0 +1,2 @@
+<?php if (!defined('THINK_PATH')) exit(); $sum = count($comment_data); for($i=0;$i<$sum;$i++) { echo $comment_data[$i]['subscription_process']; } ?>
+			<a onclick="tongyi()" id="attention_t"><img src="/juniorchina_web/Public/Home/images/sure_process.png"></a>

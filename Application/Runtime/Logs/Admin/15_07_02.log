@@ -1,0 +1,117 @@
+[ 2015-07-02T10:09:20+08:00 ] ::1 /juniorchina_web/index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-02T10:09:20+08:00 ] ::1 /juniorchina_web/index.php/Admin/Index/head
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-02T10:09:20+08:00 ] ::1 /juniorchina_web/index.php/Admin/Index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-02T10:09:20+08:00 ] ::1 /juniorchina_web/index.php/Admin/Index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-02T10:09:24+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:index
+
+[ 2015-07-02T10:09:26+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-02T10:09:39+08:00 ] ::1 /juniorchina_web/index.php/Admin/Index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-02T10:09:41+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:index
+
+[ 2015-07-02T10:09:43+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-02T10:13:00+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-02T10:13:00+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-02T10:13:57+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-02T10:13:57+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-02T10:14:10+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-02T10:14:10+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-02T10:15:59+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-02T10:15:59+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-02T10:16:05+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-07-02T10:16:05+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-02T10:16:20+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-02T10:16:20+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-02T10:17:49+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-02T10:17:49+08:00 ] ::1 /juniorchina_web/index.php/Admin/Fund/funddata.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+

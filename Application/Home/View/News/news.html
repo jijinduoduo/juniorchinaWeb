@@ -1,0 +1,170 @@
+<extend name="Base/common"/>
+<block name="header">
+	<header class="zj_header" >
+		<include file="Public/header"/>
+    </header>
+</block>
+
+<!--继承header页面-->
+
+
+
+<block name="body">
+<div class="zj_fundbody">
+
+<script type="text/javascript">
+
+window.onload=function()
+{
+        $.ajax({
+             type: "GET",
+             url: "<{:U("company")}>",
+             data: {fund_page:$("#page").val()},
+             dataType: "json",	
+             success: function(data){
+             
+                         $('#company').empty();   //清空process里面的所有内容
+                         var html =''; 
+                             $.each(data, function(commentIndex, comment){
+                               html += '' + data['content']                                      
+                                         + '';
+                                  }); 
+                         $('#company').html(html);
+                      }
+             });
+}
+//尊嘉公告
+function company_t(){
+ 
+          $.ajax({
+             type: "GET",
+             url: "<{:U("company")}>",
+             data: {fund_page:$("#page").val()},
+             dataType: "json",	
+             success: function(data){
+                         $('#company').empty();  
+                         $('#new_report').empty();   //清空process里面的所有内容
+                          $('#view').empty();
+                         var html =''; 
+                             $.each(data, function(commentIndex, comment){
+                               html += '' + data['content']                                      
+                                         + '';
+                                  }); 
+                         $('#company').html(html);
+                      }
+             });
+}
+
+//新闻报道
+function  new_report_t(){
+         $.ajax({
+             type: "GET",
+             url: "__APP__/Home/news/new_report.html?fund_page=1", 
+              data: {fund_page:$("#page").val()},
+             dataType: "json",	
+             success: function(data){
+                        $('#company').empty();  
+                         $('#new_report').empty();   //清空process里面的所有内容
+                          $('#view').empty();
+                         var html =''; 
+                             $.each(data, function(commentIndex, comment){
+                               html += '' + data['content']                                        
+                                         + '';
+                                  }); 
+                         $('#new_report').html(html);
+                      }
+             });
+}
+
+//公司视点
+function  view_t(){
+         $.ajax({
+             type: "GET",
+               url: "__APP__/Home/news/view.html?fund_page=1", 
+             data: {fund_page:$("#page").val()},
+             dataType: "json",	
+             success: function(data){
+             
+                          $('#company').empty();  
+                         $('#new_report').empty();   //清空process里面的所有内容
+                          $('#view').empty();
+                         var html =''; 
+                             $.each(data, function(commentIndex, comment){
+                               html += '' + data['content']                                        
+                                         + '';
+                                  }); 
+                         $('#view').html(html);
+                      }
+             });
+         }
+          
+</script>
+
+<div id="tabbox">
+	<!--	
+		新闻咨询的下拉列表
+	-->
+    <ul class="tabs" id="tabs">
+      	<li><a  class="Left_font_size" rel="1" id="company_t" onclick="company_t()">尊嘉公告</a></li>
+		<li><a  class="Left_font_size" rel="1" id="new_report_t" onclick="new_report_t()">新闻报道</a></li>
+		<li><a  class="Left_font_size" rel="1" id="view_t" onclick="view_t()">公司视点</a></li>
+		
+    </ul>
+    <!--
+    	新闻资讯logo
+    -->
+    <div class="zj_news_logo">
+			<img src="__IMG__/new.png" />
+	  </div>
+
+<!--子页面-->
+<ul class="tab_conbox" id="tab_conbox">
+    <!--公司公告-->
+        <li class="tab_con" style="display: list-item;">
+           		
+			  <div id="company">
+			  		
+			  </div>
+			 
+        </li>
+       
+   <!--新闻报道--> 
+        <li class="tab_con" style="display: none;">
+              <div id="new_report">
+             
+              </div>
+        </li>
+  <!--公司视点--> 
+        <li class="tab_con" style="display: none;">
+              <div id="view">
+              	
+              </div>              
+        </li>
+   <!--内容的页面-->
+        <li class="tab_con" style="display: none;">
+              <div id="news_content">
+              	
+              	
+              </div>              
+        </li>
+        
+        
+        
+        
+     </ul>
+   </div>
+</div>		  
+</block>
+<!--继承body页面-->
+
+
+<block name="footer">
+	<header class="zj_footer" >
+		
+		<include file="Public/footer"/>
+    </footer>
+</block>
+<!--继承footer页面-->
+	
+	
+

@@ -1,0 +1,58 @@
+
+
+#tabbox{ 
+	 
+	overflow:hidden;
+	margin:0 auto;
+	width: 1024px;
+	height: 1100px;
+}
+.tab_con
+{ 
+	display:none;
+}
+
+
+.tabs
+{
+	width: 201px;
+	height:200px;
+	margin-left: 30px;
+	margin-top: 36px;
+	
+	float: left;
+
+
+}
+.tabs li
+{
+	width: 201px;
+	height: 47px;
+	overflow: hidden;
+	position: relative;
+}
+.tabs li a
+ {
+ 	outline: none;
+ 	display: block;
+ 	line-height: 47px;
+ 	text-align: center;
+ 	font-weight:bold;
+ 	cursor:pointer;
+ }
+	
+/*左侧栏的样式*/
+.tabs_hover a
+{
+	background:url(../images/zj_hover2.png);
+	color: #FFFFFF;
+}	
+ul
+{
+	list-style: none;
+}
+a:link,a
+{
+	text-decoration: none;
+    color: #000000;
+}

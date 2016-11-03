@@ -1,0 +1,22 @@
+<div class="tel_440">
+	<div class="tel_40"><img   class="company_img_1" src="__IMG__/tel.png" /><img src="__IMG__/tel.png" class="company_img_2"/><img src="__IMG__/tel.png"  class="company_img_3"/></div>
+	<div class="tel_392">
+<?php
+
+	$sum = count($comment_data);  
+			for($i=0;$i<$sum;$i++)
+				{	
+
+		echo '<p><span class="company_name">'.$comment_data[$i]['company_name'].'</span><br />';
+		echo '<span class="company_name_en">'.$comment_data[$i]['company_name_en'].'</span></p><br />';
+	    echo '<span class="company_address">'.$comment_data[$i]['company_address'].'';
+		echo '('.$comment_data[$i]['company_postcode'].')</span><br />';
+		echo '<p class="company_address_en">'.$comment_data[$i]['company_address_en'].'</p><br />';
+	    echo '<span class="company_1">· 电话：'.$comment_data[$i]['company_phone'].'</span><br />';
+		echo '<span class="company_1">· 传真：'.$comment_data[$i]['company_fax'].'</span><br />';
+		echo '<span class="company_1">· 客服邮箱：'.$comment_data[$i]['service_email'].'</span><br />';
+	    echo '<span class="company_1">· 招聘邮箱：'.$comment_data[$i]['recruite_email'].'</span><br />';
+		} 
+?>	
+	</div>
+</div>

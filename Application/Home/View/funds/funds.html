@@ -1,0 +1,89 @@
+<extend name="Base/common"/>
+<block name="header">
+	<header class="zj_header" >
+		<include file="Public/header"/>
+    </header>
+</block>
+<div>
+<block name="body">
+		<div class="body">
+
+
+	  <div class="zj_fundsbody">
+	  <div class="funds_classify">
+	  	 <table  class="funds_con_1"  border="1px" cellspacing="0px" style="border-collapse:collapse" >
+        		<tr>
+        			<!--<a href="<{:U('Fund/funddata')}>"-->
+        		    <th class="fund_name">产品名称</th>
+        			<th class="fund_zhi">净值</th>
+        			<th class="fund_sou">年化收益</th>
+        			<th class="fund_lv">夏普比率</th>
+        		</tr>
+        	
+        <!--支持输出查询结果中的部分数据，例如输出其中的第5～15条记录-->
+         <volist name="funds_one" id="vo"  empty="$empty" >
+        	<tr id="funds_product1" > 
+        	    <td>	<a href="__APP__/Home/Fund/funddata?funds_id=<{$vo.fund_id}>" ><{$vo.name}></a></td>
+        		<td><a href="__APP__/Home/Fund/funddata?funds_id=<{$vo.fund_series_id}>" ><{$vo.share_value}></a></td>
+        		<td></td>
+        		<td></td>	
+        	</tr>
+         </volist>			
+        	
+        
+         </table>
+         	  	 <table  class="funds_con_1"  border="1px" cellspacing="0px" style="border-collapse:collapse" >
+        		<tr>
+        			<!--<a href="<{:U('Fund/funddata')}>"-->
+        		    <th class="fund_name">产品名称</th>
+        			<th class="fund_zhi">净值</th>
+        			<th class="fund_sou">年化收益</th>
+        			<th class="fund_lv">夏普比率</th>
+        		</tr>
+        	
+        <!--支持输出查询结果中的部分数据，例如输出其中的第5～15条记录-->
+         <volist name="funds_two" id="vo"  empty="$empty" >
+        	<tr id="funds_product2" > 
+        	    <td>	<a href="__APP__/Home/Fund/funddata?funds_id=<{$vo.fund_id}>" ><{$vo.name}></a></td>
+        		<td><a href="__APP__/Home/Fund/funddata?funds_id=<{$vo.fund_id}>" ><{$vo.share_value}></a></td>
+        		<td></td>
+        		<td></td>
+        	</tr>
+         </volist>			
+        	
+        
+         </table>
+         	  	 
+         	  	 <table  class="funds_con_1"  border="1px" cellspacing="0px" style="border-collapse:collapse" >
+        		<tr>
+        			<!--<a href="<{:U('Fund/funddata')}>"-->
+        		    <th class="fund_name">产品名称</th>
+        			<th class="fund_zhi">净值</th>
+        			<th class="fund_sou">年化收益</th>
+        			<th class="fund_lv">夏普比率</th>
+        		</tr>
+        	
+        <!--支持输出查询结果中的部分数据，例如输出其中的第5～15条记录-->
+         <volist name="funds_three" id="vo"  empty="$empty" >
+        	<tr id="funds_product3" > 
+        	    <td><a href="__APP__/Home/Fund/funddata?funds_id=<{$vo.fund_id}>" ><{$vo.name}></a></td>
+        		<td><a href="__APP__/Home/Fund/funddata?funds_id=<{$vo.fund_id}>" ><{$vo.share_value}></a></td>
+        		<td></td>
+        		<td></td>
+        	</tr>
+         </volist>
+	  </div>
+     </table>
+</div>
+
+</div>
+		
+   
+</block>
+</div>
+<block name="footer">
+	<header class="zj_footer" >
+		
+		<include file="Public/footer"/>
+    </footer>
+</block>
